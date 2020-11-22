@@ -46,6 +46,9 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapUsersRoutes();
+        $this->mapGroupRoutes();
+
         //
     }
 
@@ -76,5 +79,19 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
+    }
+    protected function mapUsersRoutes()
+    {
+        Route::prefix('user') // prefix is going to be prepend before URL
+        ->middleware(['web','auth'])
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web/user.php'));
+    }
+    protected function mapGroupRoutes()
+    {
+        Route::prefix('group')
+            ->middleware(['web','auth'])
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web/group.php'));
     }
 }

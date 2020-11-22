@@ -1,0 +1,9 @@
+<?php
+return[
+    'user'=>[
+        'prefix'=>'user',
+    ],
+    'group'=>[
+        'prefix'=>'group'
+    ]
+];
