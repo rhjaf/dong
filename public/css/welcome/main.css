@@ -1,0 +1,83 @@
+body{
+    font-family:'B Morvarid', cursive;
+}
+
+/* header */
+header{
+    height: 100vh;
+
+}
+/* navbar */
+.nav-menu{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5));
+    padding: 20px;
+    transition: all .7s;
+}
+.menu-item{
+    font-size:13px ;
+    letter-spacing: 1px;
+    color: #eee;
+    transition: color .5s;
+}
+.nav-active{
+    color: #70aed2;
+}
+.menu-item:hover{
+    color: #70aed2;
+}
+.line1,.line2,.line3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+.change .line1{
+    transform: rotate(-45deg) translate(-5px,6px);/*it will translate it after rotate it*/
+
+
+}
+.change .line2{
+    opacity: 0;
+}
+.change .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.custom-navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7));
+}
+
+/* end of navber */
+/* banner */
+.banner{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/* transform moves the elements according to its current positon*/
+    width: 80%;
+}
+.banner-heading{
+    animation-name: anim;
+    animation-duration: 2s;
+
+}
+.banner-par{
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+/* end of banenr */
+/* end of header */

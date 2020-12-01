@@ -10903,3 +10903,6 @@ a.text-dark:focus {
   }
 }
 
+@media all and (max-width:480px) {
+    .button-medium-block {  display:block; }
+}

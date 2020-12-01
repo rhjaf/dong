@@ -9,7 +9,7 @@ class LangController extends Controller
 {
     //
     public function en(){
-        App::setLocale('en');
+        app()->setLocale('en');
         return redirect()->back();
     }
     public function fa(){
