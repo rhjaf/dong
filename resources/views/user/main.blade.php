@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap-rtl.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
 
+    @yield('style')
 
     <title>پنل کاربری</title>
+
+
 
 </head>
 <body >
@@ -38,25 +41,25 @@
                         <img class="figure-img" width="50" src="{{asset('images/icon.png')}}">
                         <span style = 'font-family: B Morvarid'>دونگی</span>
                     </a>
-                    <div class="bottom-border pb-3 " >
-                        <img src="{{asset('images/admin.jpg')}}" width="50" class="rounded-circle ml-3">
-                        <a href="#" class="text-white">علی علوی</a>
+                    <div class="bottom-border pb-3" >
+                        <img src="/uploads/avatars/{{auth()->user()->avatar}}" width="50" class="rounded-circle ml-3">
+                        <a href="#" class="text-white">{{auth()->user()->name}}</a>
                     </div>
                     <ul class="navbar-nav flex-column mt-4">
                         <li class="nav-item ">
-                            <a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i> خانه</a>
+                            <a href="{{route('user')}}" class="nav-link text-white p-3 mb-2 sidebar-link {{'user'==request()->path()?'current':''}}"><i class="fas fa-home text-light fa-lg mr-3"></i> خانه</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i> پروفایل</a>
+                            <a href="{{route('user.profile.show',auth()->user())}}" class="nav-link text-white p-3 mb-2 sidebar-link {{'user/'.auth()->user()->id.'/profile'==request()->path()?'current':''}}"><i class="fas fa-user text-light fa-lg mr-3"></i> پروفایل</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-users text-light fa-lg mr-3"></i> گروه ها</a>
+                            <a href="{{route('user.groups',auth()->user())}}" class="nav-link text-white p-3 mb-2 sidebar-link {{'user/'.auth()->user()->id.'/groups'==request()->path()?'current':''}}"><i class="fas fa-users text-light fa-lg mr-3"></i> گروه ها</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i> پیامها</a>
+                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link {{'inbox'==request()->path()?'current':''}}"><i class="fas fa-envelope text-light fa-lg mr-3"></i> پیامها</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i> هزینه ها</a>
+                            <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link {{'cost'==request()->path()?'current':''}}"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i> هزینه ها</a>
                         </li>
 
                     </ul>
@@ -94,13 +97,26 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" data-dismiss="modal">ماندن</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">خروج</button>
+                <form method="POST" action="/logout">
+                    @csrf
+                    <button class="btn btn-danger" >خروج</button>
+
+                </form>
             </div>
         </div>
     </div>
 </div>
 <!--end of modal-->
-@yield('content')
+<section class="container-fluid">
+        @if(\Illuminate\Support\Facades\Session::has('group-created'))
+            <div class="row">
+                <div class="col-xl-10 col-md-8 col-lg-9 ml-auto alert-success alert">{{\Illuminate\Support\Facades\Session::get('group-created')}}</div>
+            </div>
+        @endif
+        @yield('content')
+</section>
+
+{{--
 <!--cards-->
 <section class="container-fluid">
     <div class="row">
@@ -646,12 +662,7 @@
         </div>
     </div>
 </section>
-
-
-@yield('content')
-
-
-
+--}}
 
 
 
@@ -660,7 +671,8 @@
 
 
 <!-- floating button -->
-<div id="fab" style="display: inline-block;position: fixed;left:20px;bottom:20px;color:#eee;box-shadow:0px 5px 5px  gray;font-weight:bold;font-size:40px;width: 40px;height: 40px;border-radius: 50%;background:linear-gradient(to bottom,rgb(266,3,3),rgb(255,65,65));cursor: pointer" align="center" data-toggle="modal" data-target="#newGroupModal">+</div>
+
+<a id="fab" style="display: inline-block;position: fixed;left:20px;bottom:20px;color:#eee;box-shadow:0px 5px 5px  gray;font-weight:bold;font-size:40px;width: 40px;height: 40px;border-radius: 50%;background:linear-gradient(to bottom,rgb(266,3,3),rgb(255,65,65));cursor: pointer;line-height: 40px" align="center"  data-toggle="modal" data-target="#newGroupModal">+</a>
 <!-- end of floating button -->
 <!-- New Group Modal -->
 <!-- Modal -->
@@ -675,21 +687,22 @@
             </div>
             <div class="modal-body">
 {{-- TODO : change action attrib to  action="{{route('group.store')}}"             --}}
-                    <form action="#" method="post" enctype="multipart/form-data">
+                    <form action="{{route('group.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
+                        @method('POST')
                         <div class="form-group">
-                            <label for="group_name">نام گروه</label>
-                            <input type="text" name="group_name" id="title" class="form-control" placeholder="نام گروه">
+                            <label for="name">نام گروه</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="نام گروه">
                         </div>
                         <div class="form-group">
-                            <label for="file">تصویر گروه</label>
-                            <input type="file" name="file" id="group_image" class="form-control-file">
+                            <label for="avatar">تصویر گروه</label>
+                            <input type="file" name="avatar" id="avatar" class="form-control-file">
                         </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">انصراف</button>
-                <button type="submit" class="btn btn-success">ایجاد گروه</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">انصراف</button>
+                            <button type="submit" class="btn btn-success">ایجاد گروه</button>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>
@@ -703,35 +716,12 @@
         <div class="row">
             <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                 <div class="row border-top pt-3">
-                    <div class="col-lg-6 text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item mr-2">
-                                <a href="#"class="text-dark">
-                                    CodeAndCreate
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#"class="text-dark">
-                                    About
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#"class="text-dark">
-                                    Support
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#"class="text-dark">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 text-center">
+
+                    <div class="col-lg-12 text-center">
                         <p>
-                            &copy;2018 Copyright.Made With
-                            <i class="fas fa-heart text-danger"></i>
-                            by <span class="text-success">CodeAndCreate</span>
+                            &copy; Copyright 2020 Made With
+                            <i class="fab fa-laravel text-danger"></i>
+                            by <a class="text-success" href="https://rhjaf.github.io">RHJAR</a>
                         </p>
                     </div>
                 </div>
@@ -739,11 +729,18 @@
         </div>
     </div>
 </footer>
-<!-- end of footer -->
-<script src="{{asset('js/script.js')}}"></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- Scripts -->
 <script src="{{ asset('js/bootstrap.js') }}" defer></script>
 <script src="{{ asset('js/app.js') }}"></script>
+
+<!-- end of footer -->
+<script src="{{asset('js/script.js')}}"></script>
+
+<!-- AJAX for creating group -->
+@yield('script')
+
+
 </body>
 </html>

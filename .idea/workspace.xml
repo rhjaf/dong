@@ -20,45 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc7e362f-6c30-4469-a6b4-fc8a3d2fafa0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/welcome/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/welcome/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/admin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/business.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/avatars/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/groups/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/group.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/groups.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dong.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LangController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LangController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/welcome/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web/group.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web/group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web/user.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +137,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
@@ -188,6 +177,12 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/nicolaslopezj/searchable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kczxEQxEA50ceXWF0A1MMHeBCU" />
@@ -205,7 +200,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -215,11 +211,11 @@
       <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="M:\Courses\University\Analyzing and Design of System\dong\resources\views" />
+      <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\uploads\avatars" />
+      <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\uploads" />
+      <recent name="M:\Courses\University\Analyzing and Design of System\dong\resources\views\user\groups" />
       <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\images" />
-      <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\js" />
-      <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\css\welcome" />
-      <recent name="M:\Courses\University\Analyzing and Design of System\dong\resources\views\user" />
-      <recent name="M:\Courses\University\Analyzing and Design of System\dong\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,7 +224,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -259,11 +255,24 @@
       <workItem from="1606632925230" duration="9500000" />
       <workItem from="1606678174102" duration="299000" />
       <workItem from="1606755724095" duration="2339000" />
+      <workItem from="1607345595076" duration="8517000" />
+      <workItem from="1607869260461" duration="1929000" />
+      <workItem from="1607873486594" duration="2919000" />
+      <workItem from="1607923692480" duration="8630000" />
+      <workItem from="1607956503533" duration="18511000" />
+      <workItem from="1608443695767" duration="439000" />
+      <workItem from="1608445246917" duration="676000" />
+      <workItem from="1608458738671" duration="356000" />
+      <workItem from="1608459868577" duration="108000" />
+      <workItem from="1608460002622" duration="48000" />
+      <workItem from="1608474387935" duration="14058000" />
+      <workItem from="1608537232795" duration="9853000" />
+      <workItem from="1608560577068" duration="13969000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -278,6 +287,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608548163134">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1608548163134" />
+    <state x="423" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607961887940">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="423" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1607961887940" />
+    <state x="410" y="80" key="FileChooserDialogImpl" timestamp="1608537968177">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="410" y="80" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1608537968177" />
     <state width="1322" height="564" key="GridCell.Tab.0.bottom" timestamp="1606067250095">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -294,21 +315,21 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1322" height="564" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606067250095" />
-    <state x="499" y="302" key="NewPhpFileDialog" timestamp="1606645317473">
+    <state x="499" y="302" key="NewPhpFileDialog" timestamp="1608578030679">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="302" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1606645317473" />
-    <state x="184" y="28" key="SettingsEditor" timestamp="1606067676921">
+    <state x="499" y="302" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1608578030679" />
+    <state x="184" y="28" key="SettingsEditor" timestamp="1607970619377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606067676921" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1606643859620">
+    <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607970619377" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1608576162562">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1606643859620" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606757556697">
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1608576162562" />
+    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup" timestamp="1608582693236">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606757556697" />
+    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1608582693236" />
   </component>
 </project>

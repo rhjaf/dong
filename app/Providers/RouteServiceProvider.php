@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = 'user';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -46,8 +46,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        $this->mapUsersRoutes();
-        $this->mapGroupRoutes();
+        /*$this->mapUsersRoutes();
+        $this->mapGroupRoutes();*/
 
         //
     }
@@ -80,7 +80,7 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
     }
-    protected function mapUsersRoutes()
+    /*protected function mapUsersRoutes()
     {
         Route::prefix('user') // prefix is going to be prepend before URL
         ->middleware(['web','auth'])
@@ -93,5 +93,5 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware(['web','auth'])
             ->namespace($this->namespace)
             ->group(base_path('routes/web/group.php'));
-    }
+    }*/
 }

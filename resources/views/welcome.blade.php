@@ -16,7 +16,7 @@
     <body>
     <!-- header -->
     @auth
-        <?php redirect('/home')?>
+        <?php redirect('user')?>
     @endauth
     <header style="background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url({{asset('images/bg.jpg')}}) no-repeat center center /cover;">
         <!-- navbar -->
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold " id="myNavbar">
                 <ul class="navbar-nav">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link m-2 menu-item nav-active">خانه</a>
+                        <a href="#" class="nav-link m-2 menu-item {{'/'==request()->path()?'nav-active':''}}">خانه</a>
                     </li>
                     <li class="navbar-item">
                         <a href="{{route('login')}}" class="nav-link m-2 menu-item">ورود</a>
@@ -39,7 +39,7 @@
                         <a href="{{route('register')}}" class="nav-link m-2 menu-item">ثبت نام</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link m-2 menu-item">درباره ما</a>
+                        <a href="{{route('about')}}" class="nav-link m-2 menu-item">درباره ما</a>
                     </li>
                 </ul>
             </div>
@@ -87,6 +87,7 @@
             </div>
         </div>
 !-->
+
     </body>
     <!-- Scripts -->
     <script src="{{ asset('js/bootstrap.js') }}" defer></script>

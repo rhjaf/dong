@@ -14,3 +14,20 @@ $prefix = config('web.group.prefix');
 
 });*/
 Route::get('/','GroupController@index')->name($prefix.'index');
+Route::post('/groups','GroupController@store')->name('groups.store');
+Route::delete('/groups/{group}/destroy','GroupConroller@destroy')->name('groups.destroy');
+Route::get('/groups/{group}/edit','GroupConroller@edit')->name('groups.edit');
+Route::put('/groups/{group}/update','GroupConroller@update')->name('groups.update');
+
+
+
+
+
+
+
+
+
+
+
+
+
