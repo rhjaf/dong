@@ -54,7 +54,7 @@
             <p class="lead banner-par font-weight-bold " style="color:  rgb(30,120,255);text-shadow:2px 2px rgba(0,6,143,0.94)">
                 یه راه ساده ولی جذاب و مدرن برای محاسبه ی  سهم (دُنگ) هرکس  <br>از هزینه های انجام شده است.
             </p>
-            <a href="{{route('register')}}" class="btn btn-lg banner-par btn-outline-success text-uppercase px-3">ثبت نام</a>
+            <a href="{{route('register')}}" class="btn btn-lg banner-par btn-success text-uppercase px-3">ثبت نام</a>
         </div>
         <!-- end of banner -->
     </header>
