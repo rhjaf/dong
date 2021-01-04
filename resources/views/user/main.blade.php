@@ -129,7 +129,7 @@
                             <div class="d-flex justify-content-between">
                                 <i class="fas fa-shopping-cart fa-3x text-warning"></i>
                                 <div class="text-right text-secondary">
-                                    <h5>خرید ها</h5>
+                                    <h5>پرداختی ها</h5>
                                     <h3>
                                         @php
                                             $purchases = Illuminate\Support\Facades\DB::table('expenses')->where('payer','=',\Illuminate\Support\Facades\Auth::user()->id)->where('accepted','=','1')->sum('cost');
@@ -151,7 +151,7 @@
                                 <div class="d-flex justify-content-between">
                                     <i class="fas fa-money-bill-alt fa-3x text-success"></i>
                                     <div class="text-right text-secondary">
-                                        <h5>دارايي</h5>
+                                        <h5>بدهکاری / بستانکاری</h5>
                                         <h3 style="direction: ltr">
                                             @php
                                             $debts = Illuminate\Support\Facades\DB::table('debts')->where('user_id','=',\Illuminate\Support\Facades\Auth::user()->id)->sum('cost');

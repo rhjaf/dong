@@ -29,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_20_193556_modify_group_column_of_admin_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_193556_modify_group_column_of_admin_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/groups.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -255,7 +256,7 @@
       <workItem from="1608611414335" duration="1681000" />
       <workItem from="1609683204030" duration="4443000" />
       <workItem from="1609738662132" duration="15405000" />
-      <workItem from="1609776519208" duration="14676000" />
+      <workItem from="1609776519208" duration="15398000" />
     </task>
     <servers />
   </component>
