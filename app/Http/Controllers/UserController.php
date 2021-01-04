@@ -60,6 +60,10 @@ class UserController extends Controller
         return Auth::user()->id = Group::find($group)->admin;
     }
 
+    public function makeExpense(User $user,Group $group) {
+//        return ('hello');
+        return view('user.expenses-create',['group'=>$group,'user'=>$user]);
+    }
 
     public function showGroups(User $user) {
         return view('user.groups',['groups'=>$user->groups()->paginate('5')]);

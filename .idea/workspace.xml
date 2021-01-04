@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc7e362f-6c30-4469-a6b4-fc8a3d2fafa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/expenses-create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/expenses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_20_193556_modify_group_column_of_admin_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_193556_modify_group_column_of_admin_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,8 +176,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -242,6 +253,9 @@
       <workItem from="1608537232795" duration="9853000" />
       <workItem from="1608560577068" duration="14235000" />
       <workItem from="1608611414335" duration="1681000" />
+      <workItem from="1609683204030" duration="4443000" />
+      <workItem from="1609738662132" duration="15405000" />
+      <workItem from="1609776519208" duration="14676000" />
     </task>
     <servers />
   </component>
@@ -261,14 +275,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608548163134">
+    <state x="275" y="34" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609756262241">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1608548163134" />
+    <state x="275" y="34" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1609756262241" />
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609756622173">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1609756622173" />
     <state x="423" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607961887940">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="423" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1607961887940" />
+    <state width="304" height="242" key="DatabaseViewActions_Filter" timestamp="1609756267435">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="304" height="242" key="DatabaseViewActions_Filter/0.0.1366.768@0.0.1366.768" timestamp="1609756267435" />
     <state x="410" y="80" key="FileChooserDialogImpl" timestamp="1608537968177">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -289,21 +311,37 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1322" height="564" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606067250095" />
-    <state x="499" y="302" key="NewPhpFileDialog" timestamp="1608578030679">
+    <state x="308" y="32" key="NewPhpClassDialog" timestamp="1609749517709">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="302" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1608578030679" />
+    <state x="308" y="32" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1609749517709" />
+    <state x="499" y="302" key="NewPhpFileDialog" timestamp="1609749547063">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="499" y="302" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1609749547063" />
     <state x="184" y="28" key="SettingsEditor" timestamp="1607970619377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607970619377" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1608576162562">
+    <state width="780" height="498" key="SwitcherDM" timestamp="1609790781087">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1608576162562" />
-    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup" timestamp="1608612248861">
+    <state width="780" height="498" key="SwitcherDM/0.0.1366.768@0.0.1366.768" timestamp="1609790781087" />
+    <state x="561" y="233" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609756189046">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1608612248861" />
+    <state x="561" y="233" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.768@0.0.1366.768" timestamp="1609756189046" />
+    <state width="750" height="540" key="javadoc.popup" timestamp="1609745682647">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="750" height="540" key="javadoc.popup/0.0.1366.768@0.0.1366.768" timestamp="1609745682647" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1609753334650">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1609753334650" />
+    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup" timestamp="1609779689246">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="840" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1609779689246" />
   </component>
 </project>

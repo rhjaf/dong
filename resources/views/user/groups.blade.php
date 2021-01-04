@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-5">
                 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-                    <div class="row align-items-center">
+                    <div class="row ">
                         <div class="col-12 mb-4 col-xl-12 mb-xl-0">
                             <h3 class="text-muted text-right mb-3">لیست گروه ها</h3>
                                 @if(\Illuminate\Support\Facades\Session::has('group-update'))

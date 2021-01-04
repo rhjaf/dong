@@ -15,10 +15,13 @@ class ModifyGroupColumnOfAdminTable extends Migration
     {
         Schema::table('groups', function (Blueprint $table) {
             //
-            $table->dropForeign(['admin']);
-            $table->dropColumn('admin');
-            $table->unsignedBigInteger('admin');
-            $table->foreign('admin')->references('id')->on('users')->onDelete('cascade');
+            if(!Schema::hasColumn('groups','admin')){
+                $table->dropForeign(['admin']);
+                $table->dropColumn('admin');
+                $table->unsignedBigInteger('admin');
+                $table->foreign('admin')->references('id')->on('users')->onDelete('cascade');
+
+            }
         });
     }
 
@@ -31,7 +34,7 @@ class ModifyGroupColumnOfAdminTable extends Migration
     {
         Schema::table('groups', function (Blueprint $table) {
             //
-
+            $table->dropColumn('admin');
         });
     }
 }

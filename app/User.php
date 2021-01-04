@@ -47,6 +47,6 @@ class User extends Authenticatable
     public function getAll(){
     }*/
     public function userIsAdmin($group) {
-        return Auth::user()->id == Group::find($group)->first()->admin;
+        return Auth::user()->id == Group::where('id',$group->id)->first()->admin;
     }
 }
